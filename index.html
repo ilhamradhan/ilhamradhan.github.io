@@ -67,7 +67,7 @@
       width: 130px; height: 130px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid var(--purple);
+      border: 3px solid var(--cyan);
     }
 
     .avatar-placeholder {
@@ -77,7 +77,7 @@
       justify-content: center;
       font-family: 'Fira Code', monospace;
       font-size: 2rem;
-      color: var(--purple);
+      color: var(--cyan);
     }
 
     .status-dot {
@@ -85,7 +85,7 @@
       bottom: 8px; right: 8px;
       width: 14px; height: 14px;
       border-radius: 50%;
-      background: var(--green);
+      background: var(--green); /* change to var(--red) if unavailable */
       border: 2px solid var(--bg);
     }
 
@@ -544,5 +544,358 @@
     }
   </style>
 </head>
+<body>
 
+<!-- SIDEBAR -->
+<aside id="sidebar">
+  <div class="avatar-wrap">
+    <img src="assets/avatar.jpg" alt="Ilham Ramadhan"/>
+    <div class="status-dot" title="Available for work"></div>
+  </div>
+
+  <h1>Ilham Ramadhan</h1>
+  <div class="tagline">// bi_analyst.py</div>
+  <div class="tagline">// data_engineer.py</div>
+  <div class="location">Berlin, Germany</div>
+
+  <p class="bio">
+    Building pipelines that hopefully works and don't break at weekends.
+    Turning raw chaos into clean, queryable truth.
+  </p>
+
+  <nav>
+    <a href="#about"      class="active"><span class="nav-icon">◈</span> about</a>
+    <a href="#projects"          ><span class="nav-icon">◉</span> projects</a>
+    <a href="#stack"             ><span class="nav-icon">◎</span> stack</a>
+    <a href="#experience"        ><span class="nav-icon">◷</span> experience</a>
+  </nav>
+
+  <div class="socials">
+    <a href="https://github.com/ilhamradhan" target="_blank" title="GitHub">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02.005 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+      </svg>
+    </a>
+    <a href="https://linkedin.com/in/ilrama/" target="_blank" title="LinkedIn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/>
+      </svg>
+    </a>
+    <a href="mailto:ilhamradhan@gmail.com" title="Email">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+    </a>
+  </div>
+</aside>
+
+<!-- MAIN SECTION -->
+<main id="main">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2>about_me</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>// who I am</h3>
+        <p>
+        Data engineer with a background in BI and analytics, now focused on building the infrastructure that makes data actually useful. I like clean architecture, scalable pipelines, and systems that still make sense at 3am. Currently based in Berlin, always looking for the next interesting data problem to solve.
+        </p>
+      </div>
+      <div class="about-card">
+        <h3>// what I focus on</h3>
+        <p>
+        I build data pipelines and analytics systems that are reliable, readable, and built to last. Clean transformations in dbt. Well-orchestrated workflows in Airflow. Data that makes sense by the time it reaches the people who need it.
+        I care about the whole journey, from raw source to analytics-ready dataset. Not just making it work, but making it maintainable.
+        </p>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-val">4+</span>
+        <div class="stat-label">years in data</div>
+      </div>
+      <div class="stat">
+        <span class="stat-val">2+</span>
+        <div class="stat-label">pipelines in prod</div>
+      </div>
+      <div class="stat">
+        <span class="stat-val">8+</span>
+        <div class="stat-label">dashboards created</div>
+      </div>
+      <div class="stat">
+        <span class="stat-val">0</span>
+        <div class="stat-label">weekend incidents (lately)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2>featured_projects</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Card 1 -->
+      <div class="project-card">
+        <div class="thumb-wrap">
+          <!--
+            Replace the div below with:
+            <img src="assets/project1.gif" alt="Real-time pipeline demo" />
+          -->
+        <img src="assets/portfolioDashboard.png" alt="Financial portfolio analysis dashboard" />
+        </div>
+        <div class="project-body">
+          <div class="project-title">Financial portfolio analysis dashboard</div>
+          <p class="project-desc">
+            End-to-end financial data platform: Yahoo Finance and FRED data ingestion into GCS, BigQuery warehousing with dbt transforms, and a Streamlit analytics dashboard. Built during final project week of data engineering bootcamp.
+          </p>
+          <div class="tags">
+            <span class="tag cyan">BigQuery</span>
+            <span class="tag green">Airflow</span>
+            <span class="tag orange">dbt</span>
+            <span class="tag purple">Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/ilhamradhan/de-financial-portfolio-analysis" target="_blank" class="btn btn-primary">→ GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <!-- <div class="project-card">
+        <div class="thumb-wrap">
+          <div class="thumb-placeholder">
+            <div class="pipeline-anim">
+              <div class="pipe-node n2">S3</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n4">dbt</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n1">Snowflake</div>
+            </div>
+            <div class="gif-badge">▶ replace with .gif</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Data Lakehouse Migration</div>
+          <p class="project-desc">
+            Migrated a legacy on-prem Hadoop cluster to a modern lakehouse on S3 + Snowflake,
+            reducing query latency by 70% and monthly compute cost by 45%.
+          </p>
+          <div class="tags">
+            <span class="tag yellow">Snowflake</span>
+            <span class="tag cyan">dbt</span>
+            <span class="tag green">S3</span>
+            <span class="tag pink">Terraform</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">→ GitHub</a>
+            <a href="#" class="btn btn-ghost">↗ Case Study</a>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Card 3 -->
+      <!-- <div class="project-card">
+        <div class="thumb-wrap">
+          <div class="thumb-placeholder">
+            <div class="pipeline-anim">
+              <div class="pipe-node n3">API</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n1">Airbyte</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n4">DBT</div>
+            </div>
+            <div class="gif-badge">▶ replace with .gif</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Analytics Engineering Framework</div>
+          <p class="project-desc">
+            Built a company-wide dbt framework with 200+ models, full test coverage,
+            automated docs, and CI/CD via GitHub Actions. Adopted by 3 teams.
+          </p>
+          <div class="tags">
+            <span class="tag purple">dbt</span>
+            <span class="tag orange">Airbyte</span>
+            <span class="tag cyan">GitHub Actions</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">→ GitHub</a>
+            <a href="#" class="btn btn-ghost">↗ Case Study</a>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Card 4 -->
+      <!-- <div class="project-card">
+        <div class="thumb-wrap">
+          <div class="thumb-placeholder">
+            <div class="pipeline-anim">
+              <div class="pipe-node n4">DBT</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n2">GE</div>
+              <div class="pipe-arrow">→</div>
+              <div class="pipe-node n3">Slack</div>
+            </div>
+            <div class="gif-badge">▶ replace with .gif</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Data Quality Observability</div>
+          <p class="project-desc">
+            Implemented Great Expectations + custom dbt tests with Slack alerting
+            and a Streamlit dashboard for real-time data quality monitoring.
+          </p>
+          <div class="tags">
+            <span class="tag green">Great Expectations</span>
+            <span class="tag cyan">Streamlit</span>
+            <span class="tag yellow">dbt</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-primary">→ GitHub</a>
+            <a href="#" class="btn btn-ghost">↗ Case Study</a>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2>tech_stack</h2>
+    </div>
+
+    <div class="stack-grid">
+
+      <div class="stack-category">
+        <h3>ingestion</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--cyan)"></div>Airbyte</div>
+      </div>
+
+      <div class="stack-category">
+        <h3>transformation</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--green)"></div>dbt</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--green)"></div>Apache Spark</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--green)"></div>SQL / dbt macros</div>
+      </div>
+
+      <div class="stack-category">
+        <h3>orchestration</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--orange)"></div>Apache Airflow</div>
+      </div>
+
+      <div class="stack-category">
+        <h3>storage</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--yellow)"></div>Snowflake</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--yellow)"></div>BigQuery</div>
+      </div>
+
+      <div class="stack-category">
+        <h3>infrastructure</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--pink)"></div>Terraform</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--pink)"></div>Docker</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--pink)"></div>GCP</div>
+      </div>
+
+      <div class="stack-category">
+        <h3>languages</h3>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--purple)"></div>Python</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--purple)"></div>SQL</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--purple)"></div>Bash / Shell</div>
+        <div class="stack-item"><div class="stack-dot" style="background:var(--purple)"></div>YAML / Jinja</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2>work_experience</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Apr 2023 — Jun 2025</div>
+        <div class="tl-role">Business Intelligence Analyst</div>
+        <div class="tl-company">@ Klickrent GmbH · Berlin, DE</div>
+        <div class="tl-body">
+          <ul>
+            <li>Built and maintained ETL pipelines consolidating ~2M rows from SAP, Salesforce, SQL and CSV sources into a unified
+                analytics layer, reducing data prep time by ~30%.</li>
+            <li>Developed 7+ KPI dashboards in CRM Analytics and Salesforce Reporting for Management, Finance, and Sales.</li>
+            <li>Defined data structuring standards and ETL norms and trained 1–3 users on CRM Analytics, cutting ad-hoc requests by
+                ~40%.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-date">Nov 2020 - Mar 2023</div>
+        <div class="tl-role">IT Project Manager</div>
+        <div class="tl-company">@ nxt gen digital · Berlin, DE</div>
+        <div class="tl-body">
+          <ul>
+            <li>Implemented Xentral and Haufe X360 (Acumatica) ERP for 5+ SME retail clients. </li>
+            <li>Built Make (Integromat) automation workflows for an integration between ERP and DHL portal saving ~8 hrs/week per client.</li>
+            <li>Extracted and validated data via SQL queries and REST APIs across multiple client environments.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    built with <span>♥</span> by Ilham &nbsp;·&nbsp;
+    designed in the <span>dracula</span> palette &nbsp;·&nbsp;
+    hosted on <span>github pages</span>
+  </footer>
+
+</main>
+
+<script>
+  // Active nav link on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('nav a');
+
+  const observer = new IntersectionObserver(entries => {
+    // Find the most visible section
+    let maxVisibility = 0;
+    let mostVisibleSection = null;
+
+    entries.forEach(e => {
+      if (e.intersectionRatio > maxVisibility) {
+        maxVisibility = e.intersectionRatio;
+        mostVisibleSection = e.target;
+      }
+    });
+
+    // Update active link based on most visible section
+    if (mostVisibleSection) {
+      navLinks.forEach(a => a.classList.remove('active'));
+      const active = document.querySelector(`nav a[href="#${mostVisibleSection.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
+
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
 </html>
